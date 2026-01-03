@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renegade Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1em;
+      text-align: center;
+      font-size: 1.6em;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #222;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 2em;
+    }
+
+    .art {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+      transition: transform 0.2s ease;
+    }
+
+    .art:hover {
+      transform: scale(1.03);
+    }
+
+    .art img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    .art h3 {
+      margin-top: 0.7em;
+      font-size: 1.2em;
+      color: #f2f2f2;
+    }
+
+    .art p {
+      font-size: 0.9em;
+      color: #bfbfbf;
+      margin-top: 0.4em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Renegade of Funk Creations — Gallery</header>
+
+  <div class="gallery">
+
+    <!-- Example Art Block 1 -->
+    <div class="art">
+      <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1">
+      <h3>Title of Piece</h3>
+      <p>Short symbolic description.</p>
+    </div>
+
+    <!-- Example Art Block 2 -->
+    <div class="art">
+      <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2">
+      <h3>Title of Piece</h3>
+      <p>Short symbolic description.</p>
+    </div>
+
+    <!-- Add more art blocks as needed -->
+
+  </div>
+
+</body>
+</html>
