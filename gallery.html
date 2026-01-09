@@ -2,85 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renegade Gallery</title>
+  <title>Gallery Directory</title>
   <style>
+    .logo {
+      max-width: 200px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 8px;
+      border: 2px solid #444;
+    }
+
     body {
+      background-color: #111;
+      color: #eee;
+      font-family: sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
-      background-color: #0d0d0d;
-      color: #e6e6e6;
-      font-family: 'Segoe UI', sans-serif;
     }
 
-    header {
-      background-color: #111;
+    h1 {
+      margin-top: 0.5em;
+      font-size: 1.8em;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1.5em;
+    }
+
+    .btn {
+      display: block;
       padding: 1em;
-      text-align: center;
-      font-size: 1.6em;
-      letter-spacing: 1px;
-      border-bottom: 1px solid #222;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-      padding: 2em;
-    }
-
-    .art {
-      background-color: #1a1a1a;
-      border-radius: 8px;
-      padding: 1em;
-      text-align: center;
-      box-shadow: 0 0 12px rgba(0,0,0,0.6);
-      transition: transform 0.2s ease;
-    }
-
-    .art:hover {
-      transform: scale(1.03);
-    }
-
-    .art img {
-      max-width: 100%;
-      border-radius: 6px;
-    }
-
-    .art h3 {
-      margin-top: 0.7em;
-      font-size: 1.2em;
+      margin: 0.7em auto;
+      width: 80%;
+      max-width: 350px;
+      background-color: #222;
       color: #f2f2f2;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.2em;
+      transition: background-color 0.2s ease;
+      border: 1px solid #333;
     }
 
-    .art p {
-      font-size: 0.9em;
-      color: #bfbfbf;
-      margin-top: 0.4em;
+    .btn:hover {
+      background-color: #444;
     }
   </style>
 </head>
 <body>
 
-  <header>Renegade of Funk Creations — Gallery</header>
+  <header>
+    <img src="assets/RenegadeOfFunkCreations Logo.png"
+         alt="Renegade of Funk Creations Logo"
+         class="logo">
+  </header>
 
-  <div class="gallery">
+  <h1>Gallery Directory</h1>
 
-    <!-- Example Art Block 1 -->
-    <div class="art">
-      <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1">
-      <h3>Title of Piece</h3>
-      <p>Short symbolic description.</p>
-    </div>
+  <div class="container">
 
-    <!-- Example Art Block 2 -->
-    <div class="art">
-      <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2">
-      <h3>Title of Piece</h3>
-      <p>Short symbolic description.</p>
-    </div>
+    <a href="abstract.html" class="btn">Abstract</a>
+    <a href="dark.html" class="btn">Dark</a>
+    <a href="dark-abstract.html" class="btn">Dark‑Abstract</a>
+    <a href="deep.html" class="btn">Deep</a>
+    <a href="gentle.html" class="btn">Gentle</a>
+    <a href="horror.html" class="btn">Horror</a>
+    <a href="recovery.html" class="btn">Recovery</a>
 
-    <!-- Add more art blocks as needed -->
+    <a href="index.html" class="btn">Return to Home</a>
 
   </div>
 
