@@ -77,15 +77,15 @@
   </div>
 
   <script>
-    const tracks =
-"vdc-audio-30-Marching Tune #0.mp3",
-      "vdc-audio-4-Prologue of \"DIRGE of CERBERUS\".mp3",
-      "vdc-audio-5-Fearful Fragment of Memory.mp3",
-      "vdc-audio-6-Fearful Happening.mp3",
-      "vdc-audio-7-WRO March.mp3",
-      "vdc-audio-8-Azul the Cerulean.mp3",
-      "vdc-audio-9-Fight Tune \"Arms of Shinra\".mp3"
-    ];
+const tracks = [
+  "vdc-audio-30-Marching Tune #0.mp3",
+  "vdc-audio-4-Prologue of \"DIRGE of CERBERUS\".mp3",
+  "vdc-audio-5-Fearful Fragment of Memory.mp3",
+  "vdc-audio-6-Fearful Happening.mp3",
+  "vdc-audio-7-WRO March.mp3",
+  "vdc-audio-8-Azul the Cerulean.mp3",
+  "vdc-audio-9-Fight Tune \"Arms of Shinra\".mp3"
+];
 
     const randomTrack = tracks[Math.floor(Math.random() * tracks.length)];
     document.getElementById("vdcPlayer").src = "music/" + randomTrack;
