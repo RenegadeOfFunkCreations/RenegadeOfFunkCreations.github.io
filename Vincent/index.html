@@ -165,3 +165,170 @@ document.getElementById("vdcPlayer").src = "music/" + randomTrack;
        style="color:#66aaff; font-size:1.15em; text-decoration:none;">
        Dirge of Cerberus – “Fight Tune: The Immaculate” (Internet Archive)
     </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent – Dirge of Cerberus Chamber</title>
+
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #e2e2e2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      border-bottom: 2px solid #300;
+    }
+
+    header h1 {
+      color: #b30000;
+      font-size: 2.4rem;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .audio-player {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #222;
+      box-shadow: 0 0 10px #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    a {
+      color: #b30000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Vincent: Dirge of Cerberus</h1>
+  </header>
+
+  <!-- Random Music Player -->
+  <div class="audio-player">
+    <audio id="vdcPlayer" controls></audio>
+  </div>
+
+  <script>
+const tracks = [
+  "vdc-audio-1.mp3",
+  "vdc-audio-2.mp3",
+  "vdc-audio-3.mp3",
+  "vdc-audio-4.mp3",
+  "vdc-audio-5.mp3",
+  "vdc-audio-6.mp3",
+  "vdc-audio-7.mp3",
+  "vdc-audio-8.mp3",
+  "vdc-audio-9.mp3",
+  "vdc-audio-10.mp3",
+  "vdc-audio-11.mp3",
+  "vdc-audio-12.mp3",
+  "vdc-audio-13.mp3",
+  "vdc-audio-14.mp3",
+  "vdc-audio-15.mp3",
+  "vdc-audio-16.mp3",
+  "vdc-audio-17.mp3",
+  "vdc-audio-18.mp3",
+  "vdc-audio-19.mp3",
+  "vdc-audio-20.mp3",
+  "vdc-audio-21.mp3",
+  "vdc-audio-22.mp3",
+  "vdc-audio-23.mp3",
+  "vdc-audio-24.mp3",
+  "vdc-audio-25.mp3",
+  "vdc-audio-26.mp3",
+  "vdc-audio-27.mp3",
+  "vdc-audio-28.mp3",
+  "vdc-audio-29.mp3",
+  "vdc-audio-30.mp3",
+  "vdc-audio-2-1.mp3",
+  "vdc-audio-2-2.mp3",
+  "vdc-audio-2-3.mp3",
+  "vdc-audio-2-4.mp3",
+  "vdc-audio-2-5.mp3",
+  "vdc-audio-2-6.mp3",
+  "vdc-audio-2-7.mp3",
+  "vdc-audio-2-8.mp3",
+  "vdc-audio-2-9.mp3",
+  "vdc-audio-2-10.mp3",
+  "vdc-audio-2-11.mp3",
+  "vdc-audio-2-12.mp3",
+  "vdc-audio-2-13.mp3",
+  "vdc-audio-2-14.mp3",
+  "vdc-audio-2-15.mp3",
+  "vdc-audio-2-16.mp3",
+  "vdc-audio-2-17.mp3",
+  "vdc-audio-2-18.mp3",
+  "vdc-audio-2-19.mp3",
+  "vdc-audio-2-20.mp3",
+  "vdc-audio-2-21.mp3",
+  "vdc-audio-2-22.mp3",
+  "vdc-audio-2-23.mp3"
+];
+
+const randomTrack = tracks[Math.floor(Math.random() * tracks.length)];
+document.getElementById("vdcPlayer").src = "music/" + randomTrack;
+  </script>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <script>
+      for (let i = 1; i <= 91; i++) {
+        const img = document.createElement("img");
+        img.src = `art/vdc-by-rofc ${i}.jpg`;
+        img.alt = `Vincent Art ${i}`;
+        document.querySelector(".gallery").appendChild(img);
+      }
+    </script>
+  </div>
+
+  <!-- Soundtrack Credit Section -->
+  <section class="credits" style="margin-top: 50px; padding-top: 25px; border-top: 1px solid #333; text-align:center;">
+    <h2 style="color:#b30000; font-size:1.4em; margin-bottom:10px;">
+      Soundtrack Source
+    </h2>
+
+    <p style="color:#ccc; font-size:1.05em; line-height:1.5;">
+      The music featured in this chamber is sourced from publicly available archival material.
+      You can explore the original track here:
+    </p>
+
+    <a href="https://archive.org/details/2-13-fight-tune-the-immaculate"
+       target="_blank"
+       style="color:#66aaff; font-size:1.15em; text-decoration:none;">
+       Dirge of Cerberus – “Fight Tune: The Immaculate” (Internet Archive)
+    </a>
